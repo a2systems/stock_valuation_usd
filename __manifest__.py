@@ -8,5 +8,7 @@
     "depends": ["stock_account"],
     "data": [
         "views/stock.xml", 
+        "views/stock_quant.xml", 
+        "views/product.xml", 
         ],
 }

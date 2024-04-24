@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="usd_total_value_product_product_tree" model="ir.ui.view">
+        <field name="name">usd.total.value.product.product.tree</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="stock_account.product_product_stock_tree_inherit_stock_account" />
+	<field name="arch" type="xml">
+		<field name="total_value" position="after">
+			<field name="total_value_usd" optional="hide" />
+		</field>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="usd_stock_quant_tree" model="ir.ui.view">
+        <field name="name">usd.stock.quant.tree</field>
+        <field name="model">stock.quant</field>
+        <field name="inherit_id" ref="stock_account.view_stock_quant_tree_editable_inherit" />
+	<field name="arch" type="xml">
+		<field name="value" position="after">
+			<field name="value_usd" optional="hide" />
+		</field>
+        </field>
+    </record>
+
+</odoo>
