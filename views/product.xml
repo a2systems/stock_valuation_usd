@@ -12,4 +12,16 @@
         </field>
     </record>
 
+    <record id="usd_total_margin_product_product_tree" model="ir.ui.view">
+        <field name="name">usd.total.margin.product.product.tree</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product_margin.view_product_margin_tree" />
+	<field name="arch" type="xml">
+		<field name="total_margin" position="after">
+			<field name="total_margin_usd" optional="hide" />
+		</field>
+        </field>
+    </record>
+
+
 </odoo>
