@@ -6,9 +6,9 @@
         <field name="model">stock.valuation.layer</field>
         <field name="inherit_id" ref="stock_account.stock_valuation_layer_tree" />
 	<field name="arch" type="xml">
-		<!-- field name="unit_cost" position="after">
+		<field name="unit_cost" position="after">
 			<field name="unit_cost_usd" optional="hide" />
-		</field -->
+		</field>
 		<field name="value" position="after">
 			<field name="value_usd" optional="hide" />
 		</field>
